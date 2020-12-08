@@ -15,8 +15,8 @@ body {
 
 /* delete these lines */
 /* .container {
-  height: 4481px;
-  background-image: url(../../PSD/Index.png);
+  height: 3259px;
+  background-image: url(../../PSD/Product.png);
   opacity: 0.5;
 }
 .container *:hover {
@@ -107,18 +107,25 @@ header {
   height: 38px;
   flex-grow: 1;
   padding: 12px;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.025em;
-  color: #a4a4a4;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
 }
 
+.search-field::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #a4a4a4;
+  font-family: inherit;
+}
+
 .search-btn {
+  font-family: FontAwesome;
+  font-size: 14px;
+  font-weight: 400;
+  color: #a4a4a4;
   width: 36px;
   height: 38px;
-  background: url(../img/search.png) no-repeat center center;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 0px 3px 3px 0px;
@@ -278,8 +285,8 @@ header {
   color: #222222;
   padding-left: 15px;
   letter-spacing: 0.025em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .product-price {
@@ -396,7 +403,7 @@ header {
   vertical-align: top;
 }
 
-.reviews-subscribe {
+.feedback {
   margin-top: 97px;
   height: 438px;
   background-image: url(../img/bg.png);
@@ -490,12 +497,15 @@ header {
   background-color: #e1e1e1;
   border: none;
   border-radius: 23px 0px 0px 23px;
+  padding-left: 28px;
+}
+
+.subscribe-field::placeholder {
   opacity: 0.67;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #222224;
-  padding-left: 28px;
 }
 
 .subscribe-btn {
@@ -542,8 +552,8 @@ footer {
 }
 
 .footer-text p {
-  margin-block-start: 1.2em;
-  margin-block-end: 1.8em;
+  margin-top: 1.2em;
+  margin-bottom: 1.8em;
 }
 
 .footer-list ul {
