@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRAND</title>
+  <title>BRAND | Catalog</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
       <div class="search">
         <button class="browse-btn">Browse</button>
         <form action="#" class="search-form">
-          <input class="search-field" type="search" placeholder="Search for Item..." required>
+          <input class="search-field" type="search" placeholder="Search for Item...">
           <input class="search-btn" type="submit" value="&#xf002;">
         </form>
       </div>
@@ -48,239 +48,219 @@
     </header>
 
     <main>
-      <section class="slider">
-        <div class="slider-text">
-          <h2>THE BRAND</h2>
-          <p>OF LUXERIOUS <span class="pink">FASHION</span></p>
-        </div>
-      </section>
-    
-      <section class="category padding-site">
-        <h2 style="position: absolute; visibility: hidden;">Categories</h2>
-        <div class="category-left">
-          <figure class="category-banner">
-            <img src="img/cat-1.png" alt="cat-1">
-            <figcaption>
-              <p>hOT dEAL</p>
-              <p class="pink">FOR MEN</p>
-            </figcaption>
-          </figure>
-          <figure class="category-banner">
-            <img src="img/cat-3.png" alt="cat-3">
-            <figcaption>
-              <p>LUXIROUS & trendy</p>
-              <p class="pink">ACCESORIES</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="category-right">
-          <figure class="category-banner">
-            <img src="img/cat-2.png" alt="cat-2">
-            <figcaption>
-              <p>30% offer</p>
-              <p class="pink">women</p>
-            </figcaption>
-          </figure>
-          <figure class="category-banner">
-            <img src="img/cat-4.png" alt="cat-4">
-            <figcaption>
-              <p>new arrivals</p>
-              <p class="pink">FOR kids</p>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
+      <div class="breadcrumb">
+        <h2>New Arrivals</h2>
+        <ol>
+          <li>Home</li>
+          <li>Men</li>
+          <li>New Arrivals</li>
+        </ol>
+      </div>
 
-      <section class="products padding-site">
-        <h2>Fetured Items</h2>
-        <p>Shop for items based on what we featured in this week</p>
+      <aside class="sidebar">
+        <details class="sidebar-filter">
+          <summary><h2>Category</h2></summary>
+          <ul>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Denim</a></li>
+            <li><a href="#">Hoodies & Sweatshirts</a></li>
+            <li><a href="#">Jackets & Coats</a></li>
+            <li><a href="#">Pants</a></li>
+            <li><a href="#">Polos</a></li>
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Sweaters & Knits</a></li>
+            <li><a href="#">T-Shirts</a></li>
+            <li><a href="#">Tanks</a></li>
+          </ul>
+        </details>
+        <details class="sidebar-filter">
+          <summary><h2>BRAND</h2></summary>
+          <ul>
+          </ul>
+        </details>
+        <details class="sidebar-filter">
+          <summary><h2>dESIGNER</h2></summary>
+          <ul>
+          </ul>
+        </details>
+      </aside>
+
+      <form action="#">
+        <fieldset class="filter-block">
+          <legend>Trending now</legend>
+          <label><input type="radio" name="bohemian" id="bohemian">Bohemian</label>
+          <label><input type="radio" name="floral" id="floral">Floral</label>
+          <label><input type="radio" name="lace" id="lace">Lace</label>
+          <label><input type="radio" name="floral" id="floral">Floral</label>
+          <label><input type="radio" name="lace" id="lace">Lace</label>
+          <label><input type="radio" name="bohemian" id="bohemian">Bohemian</label>
+        </fieldset>
+        <fieldset class="filter-block">
+          <legend>Size</legend>
+          <label><input type="checkbox" name="XXS" value="XXS"> XXS</label>
+          <label><input type="checkbox" name="XS" value="XS"> XS</label>
+          <label><input type="checkbox" name="S" value="S"> S</label>
+          <label><input type="checkbox" name="M" value="M"> M</label>
+          <label><input type="checkbox" name="L" value="L"> L</label>
+          <label><input type="checkbox" name="XL" value="XL"> XL</label>
+          <label><input type="checkbox" name="XXL" value="XXL"> XXL</label>
+        </fieldset>
+        <fieldset class="filter-block">
+          <legend>pRICE</legend>
+          <!-- TODO: make two thumb input range -->
+          <input type="range" name="price" id="price" min="57" max="400">
+        </fieldset>
+        <fieldset class="sort-block">
+          <label>Sort By <select name="sort" id="sort">
+            <option value="Name">Name</option>
+          </select></label>
+          <label>Show <select name="show" id="show">
+            <option value="09">09</option>
+          </select></label>
+        </fieldset>
+      </form>
+
+      <section class="products">
         <ul class="product-list">
           <li class="product">
             <figure>
-              <img src="img/item-1.png" alt="item-1">
+              <img src="img/image1_263x280.jpg" alt="image1">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-2.png" alt="item-2">
+              <img src="img/image2_263x280.jpg" alt="image2">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-3.png" alt="item-3">
+              <img src="img/image3_263x280.jpg" alt="image3">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-4.png" alt="item-4">
+              <img src="img/image4_263x280.jpg" alt="image4">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-5.png" alt="item-5">
+              <img src="img/image5_263x280.jpg" alt="image5">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-6.png" alt="item-6">
+              <img src="img/image6_263x280.jpg" alt="image6">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-7.png" alt="item-7">
+              <img src="img/image7_263x280.jpg" alt="image7">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
             </div>
           </li>
           <li class="product">
             <figure>
-              <img src="img/item-8.png" alt="item-8">
+              <img src="img/image8_263x280.jpg" alt="image8">
               <figcaption>
                 <h3 class="product-name">Mango  People  T-shirt</h3>
                 <p class="product-price">$52.00</p>
               </figcaption>
             </figure>
             <div class="product-cart">
-              <button>
-                <img src="img/cart-white.png" alt="cart">
-                <span>Add to Cart</span>
-              </button>
+            </div>
+          </li>
+          <li class="product">
+            <figure>
+              <img src="img/image9_263x280.jpg" alt="image9">
+              <figcaption>
+                <h3 class="product-name">Mango  People  T-shirt</h3>
+                <p class="product-price">$52.00</p>
+              </figcaption>
+            </figure>
+            <div class="product-cart">
             </div>
           </li>
         </ul>
-        <button class="browse-all">Browse All Product</button>
+        <div class="catalog-pagination">
+          <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>20</li>
+          </ol>
+        </div>
+        <button class="view-all">View All</button>
       </section>
 
-      <section class="feature margin-site">
-        <div class="feature-banner">
-          <h2>30% <span class="pink">OFFER</span></h2>
-          <p>FOR WOMEN</p>
-        </div>
-
-        <table class="feature-box">
-          <colgroup>
-          <col>
-          <col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="feature-icon"><img src="img/icon-delivery.png" alt="icon-delivery"></th>
-              <th>Free Delivery</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="feature-box">
-          <colgroup>
-          <col>
-          <col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="feature-icon"><img src="img/icon-sale.png" alt="icon-sale"></th>
-              <th>Sales & discounts</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="feature-box">
-          <colgroup>
-          <col>
-          <col>
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="feature-icon"><img src="img/icon-quantity.png" alt="icon-quantity"></th>
-              <th>Quality assurance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="catalog-feature-box">
+        <figure>
+          <img src="img/icon-delivery.png" alt="icon-delivery">
+          <figcaption>
+            <h2>Free Delivery</h2>
+            <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/icon-sale.png" alt="icon-sale">
+          <figcaption>
+            <h2>Free Delivery</h2>
+            <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/icon-quantity.png" alt="icon-quantity">
+          <figcaption>
+            <h2>Free Delivery</h2>
+            <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          </figcaption>
+        </figure>
       </section>
     </main>
 
@@ -303,7 +283,7 @@
         <h2>Subscribe</h2>
         <p>FOR OUR NEWLETTER AND PROMOTION</p>
         <form action="#" class="subscribe-form">
-          <input class="subscribe-field" type="email" placeholder="Enter Your Email" required>
+          <input class="subscribe-field" type="email" placeholder="Enter Your Email">
           <input class="subscribe-btn" type="submit" value="Subscribe">
         </form>
       </section>
