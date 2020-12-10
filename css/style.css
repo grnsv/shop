@@ -13,17 +13,6 @@ body {
   margin: 0 auto;
 }
 
-/* delete these lines */
-/* .container {
-  height: 3259px;
-  background-image: url(../../PSD/Product.png);
-  opacity: 0.5;
-}
-.container *:hover {
-  opacity: 0.5;
-} */
-
-
 .padding-site {
   padding-left: 230px;
   padding-right: 230px;
@@ -178,13 +167,19 @@ header {
 }
 
 .menu a {
+  display: inline-block;
+  height: 50px;
   font-size: 14px;
-  line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
   text-decoration: none;
-  padding: 16px 22px;
+  padding: 12px 23px;
+  border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+  border-bottom: 3px solid #ef5b70;
 }
 
 .slider {
@@ -224,7 +219,7 @@ header {
   position: relative;
 }
 
-.badge {
+.category-banner figcaption {
   display: inline-block;
   position: absolute;
   top: 25px;
@@ -238,7 +233,7 @@ header {
   padding: 12px 19px;
 }
 
-.badge .pink {
+.category-banner figcaption .pink {
   font-size: 30px;
 }
 
@@ -267,6 +262,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .product {
