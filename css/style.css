@@ -542,7 +542,7 @@ footer {
 
 .products {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 72px;
 }
 
 .products-container > h2 {
@@ -745,5 +745,54 @@ footer {
   content: "\f0d7";
   font-family: FontAwesome;
   color: pink;
+}
+
+.range-filter {
+  width: 260px;
+  margin: 20px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: lightslategray;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #eee;
+}
+
+.range-controls .bar {
+  width: 50%;
+  height: 2px;
+  background: red;
+  margin-left: 20%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 20%;
+}
+
+.range-controls .toggle-max {
+  left: 60%;
 }
 /*# sourceMappingURL=style.css.map */
