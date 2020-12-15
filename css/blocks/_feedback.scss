@@ -1,28 +1,25 @@
 .feedback {
   margin-top: 97px;
   background: #f7f7f8 url(../img/bg.png) no-repeat center bottom/cover;
+  min-height: 438px;
 }
 
 .feedback-container {
-  height: 438px;
+  display: flex;
 }
 
-.reviews {
-  float: left;
+.review {
   width: 50%;
-  height: 438px;
-  overflow: hidden;
   border-right: 1px solid white;
   padding: 111px 70px 111px 0;
+  display: flex;
 }
 
-.review-userpic {
-  float: left;
-  height: 100%;
+.review-left {
   margin-right: 28px;
 }
 
-.reviews q {
+.review-right q {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
@@ -64,6 +61,7 @@
 }
 
 .subscribe {
+  width: 50%;
   padding-top: 142px;
   text-align: center;
 
