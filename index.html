@@ -10,9 +10,8 @@
   <script src="https://kit.fontawesome.com/661798d047.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-
-    <header class="padding-site">
+  <header>
+    <div class="container header-container">
       <h1>
         <a class="logo" href="index.html">
           <img class="logo-img" src="img/logo.png" alt="BRAND">
@@ -35,7 +34,7 @@
 
       <nav>
         <h2 style="position: absolute; visibility: hidden;">Menu</h2>
-        <ul class="menu padding-site">
+        <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="#">Man</a></li>
           <li><a href="#">Women</a></li>
@@ -45,17 +44,21 @@
           <li><a href="#">Hot Deals</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="slider">
+  <main>
+    <section class="slider">
+      <div class="container slider-container">
         <div class="slider-text">
           <h2>THE BRAND</h2>
           <p>OF LUXERIOUS <span class="pink">FASHION</span></p>
         </div>
-      </section>
-    
-      <section class="category padding-site">
+      </div>
+    </section>
+  
+    <section class="category">
+      <div class="container category-container">
         <h2 style="position: absolute; visibility: hidden;">Categories</h2>
         <div class="category-left">
           <figure class="category-banner">
@@ -89,9 +92,11 @@
             </figcaption>
           </figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="products padding-site">
+    <section class="products">
+      <div class="container products-container">
         <h2>Fetured Items</h2>
         <p>Shop for items based on what we featured in this week</p>
         <ul class="product-list">
@@ -216,10 +221,12 @@
             </div>
           </li>
         </ul>
-        <button class="browse-all">Browse All Product</button>
-      </section>
+        <a href="catalog.html" class="browse-all">Browse All Product</a>
+      </div>
+    </section>
 
-      <section class="feature margin-site">
+    <section class="feature">
+      <div class="container feature-container">
         <div class="feature-banner">
           <h2>30% <span class="pink">OFFER</span></h2>
           <p>FOR WOMEN</p>
@@ -281,22 +288,26 @@
             </tr>
           </tbody>
         </table>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <div class="feedback padding-site">
-      <section class="reviews">
+  <div class="feedback">
+    <div class="container feedback-container">
+      <section class="review">
         <h2 style="position: absolute; visibility: hidden;">Review</h2>
-        <div class="review-userpic">
+        <div class="review-left">
           <img src="img/review1.png" alt="review1">
         </div>
-        <q>Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium</q>
-        <p class="review-name">Bin Burhan</p>
-        <p class="review-location">Dhaka, Bd</p>
-        <div class="pagination">
-          <a href="#"></a>
-          <a href="#" class="active"></a>
-          <a href="#"></a>
+        <div class="review-right">
+          <q>Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium</q>
+          <p class="review-name">Bin Burhan</p>
+          <p class="review-location">Dhaka, Bd</p>
+          <div class="pagination">
+            <a href="#"></a>
+            <a href="#" class="active"></a>
+            <a href="#"></a>
+          </div>
         </div>
       </section>
       <section class="subscribe">
@@ -308,53 +319,55 @@
         </form>
       </section>
     </div>
+  </div>
 
-    <footer>
-      <div class="footer-top padding-site">
-        <div>
-          <a class="logo" href="index.html">
-            <img class="logo-img" src="img/logo.png" alt="BRAND">
-            <span>BRAN</span><span class="pink bold">D</span>
-          </a>
-        </div>
-        <div class="footer-title">COMPANY</div>
-        <div class="footer-title">INFORMATION</div>
-        <div class="footer-title">SHOP CATEGORY</div>
-        <div class="footer-text">
-          <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.</p>
-          <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-          <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
-          <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
-        </div>
-        <div class="footer-list">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-list">
-          <ul>
-            <li><a href="#">Tearms & Condition</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">How to Buy</a></li>
-            <li><a href="#">How to Sell</a></li>
-            <li><a href="#">Promotion</a></li>
-          </ul>
-        </div>
-        <div class="footer-list">
-          <ul>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Child</a></li>
-            <li><a href="#">Apparel</a></li>
-            <li><a href="#">Browse All</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div class="container footer-top">
+      <div>
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="img/logo.png" alt="BRAND">
+          <span>BRAN</span><span class="pink bold">D</span>
+        </a>
       </div>
-      <div class="footer-bottom padding-site">
+      <div class="footer-title">COMPANY</div>
+      <div class="footer-title">INFORMATION</div>
+      <div class="footer-title">SHOP CATEGORY</div>
+      <div class="footer-text">
+        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.</p>
+        <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
+        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">Tearms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">How to Buy</a></li>
+          <li><a href="#">How to Sell</a></li>
+          <li><a href="#">Promotion</a></li>
+        </ul>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Child</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Browse All</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
         <small class="copy">&copy;&nbsp;2017 Brand All Rights Reserved.</small>
         <ul class="socials">
           <li><a href="#">
@@ -374,8 +387,7 @@
           </a></li>
         </ul>
       </div>
-    </footer>
-
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
