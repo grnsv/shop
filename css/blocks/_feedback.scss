@@ -85,6 +85,9 @@
 
 .subscribe-form {
   margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-field {
@@ -107,12 +110,9 @@
 .subscribe-btn {
   width: 104px;
   height: 46px;
-  background-color: $main-color-pink;
-  border: none;
   border-radius: 0px 23px 23px 0px;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #ffffff;
-  cursor: pointer;
+
+  @include pink-btn($main-color-pink);
 }

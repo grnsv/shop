@@ -20,7 +20,40 @@
       </h1>
       
       <div class="search">
-        <button class="browse-btn">Browse</button>
+        <button class="browse-btn">
+          <span>Browse</span>
+          <ul class="drop">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags/Purses</a></li>
+                <li><a href="#">Swimwear/Underwear</a></li>
+                <li><a href="#">Nightwear</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Beauty</a></li>
+              </ul>
+            </li>
+            <li>Men
+              <ul>
+                <li><a href="#">Tees/Tank tops</a></li>
+                <li><a href="#">Shirts/Polos</a></li>
+                <li><a href="#">Sweaters</a></li>
+                <li><a href="#">Sweatshirts/Hoodies</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Jackets/vests</a></li>
+              </ul>
+            </li>
+          </ul>
+        </button>
+        
         <form action="#" class="search-form">
           <input class="search-field" type="search" placeholder="Search for Item..." required>
           <input class="search-btn" type="submit" value="&#xf002;">
@@ -48,6 +81,96 @@
   </header>
 
   <main>
+    <section class="breadcrumb">
+      <div class="container breadcrumb-container">
+        <h2>New Arrivals</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li>New Arrivals</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="checkout container">
+      <h2 style="position: absolute; visibility: hidden;">Checkout</h2>
+      <ol>
+        <li>
+          <details open>
+            <summary>01. Shipping Adress</summary>
+            <table class="shipping">
+              <thead>
+                <tr>
+                  <th>
+                    <h3>Check as a guest or register</h3>
+                    <p>Register with us for future convenience</p>
+                  </th>
+                  <th>
+                    <h3>Already registed?</h3>
+                    <p>Please log in below</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label><input type="radio" name="login" id="guest"> checkout as guest</label>
+                    <label><input type="radio" name="login" id="register"> register</label>
+                    <h3>register and save time!</h3>
+                    <p>Register with us for future convenience</p>
+                    <ul>
+                      <li>Fast and easy checkout</li>
+                      <li>Easy access to your order history and status</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <label for="email">EMAIL ADDRESS <em>*</em></label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="password">PASSWORD <em>*</em></label>
+                    <input type="password" name="password" id="password" required>
+                    <p><em>* Required Fileds</em></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="button">Continue</button>
+                  </td>
+                  <td>
+                    <button type="submit">Log in</button>
+                    <a href="#">Forgot Password ?</a>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>02. BILLING INFORMATION</summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>03. SHIPPING INFORMATION</summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>04. SHIPPING METHOD</summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>05. PAYMENT METHOD</summary>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>06. ORDER REVIEW</summary>
+          </details>
+        </li>
+      </ol>
+    </section>
   </main>
 
   <div class="feedback">
@@ -72,8 +195,7 @@
         <h2>Subscribe</h2>
         <p>FOR OUR NEWLETTER AND PROMOTION</p>
         <form action="#" class="subscribe-form">
-          <input class="subscribe-field" type="email" placeholder="Enter Your Email" required>
-          <input class="subscribe-btn" type="submit" value="Subscribe">
+          <input class="subscribe-field" type="email" placeholder="Enter Your Email" required><input class="subscribe-btn" type="submit" value="Subscribe">
         </form>
       </section>
     </div>

@@ -35,7 +35,7 @@ header {
   flex-grow: 1;
   margin-left: 35px;
   display: flex;
-  align-items: center;
+  align-items: center;  
 }
 
 .browse-btn {
@@ -50,11 +50,53 @@ header {
   border: 1px solid #e6e6e6;
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
+  position: relative;
 
     &.browse-btn::after {
       content: " \f0d7";
       font-family: FontAwesome;
     }
+}
+
+.drop {
+  min-width: 262px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 38px;
+  transform: scale(0, 0);
+  transform-origin: left top;
+  transition: 0.3s;
+  list-style: none;
+  text-align: left;
+  cursor: initial;
+  padding: 13px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+
+  ul {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+    list-style: none;
+
+    li {
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: #4f4f4f;
+      }
+    }
+  }
+}
+
+.browse-btn:hover .drop, .browse-btn:active .drop, .browse-btn:focus .drop {
+  transform: scale(1, 1);
+  z-index: 1;
 }
 
 .search-form {
@@ -100,14 +142,11 @@ header {
 .account {
   width: 130px;
   height: 38px;
-  background-color: $main-color-pink;
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #ffffff;
   margin-left: 26px;
-  border: none;
-  cursor: pointer;
+  
+  @include pink-btn($main-color-pink);
 
     &.account::after {
       content: " \f0d7";
@@ -147,7 +186,7 @@ header {
     border-bottom: 3px solid transparent;
 
     &:hover {
-      border-bottom: 3px solid #ef5b70;
+      border-bottom: 3px solid $add-color-pink;
     }
   }
 
