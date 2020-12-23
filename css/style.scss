@@ -146,6 +146,7 @@ body {
 
   &:hover {
     box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+    transform: scale(1.1);
 
     .product-cart {
       opacity: 1;
@@ -497,20 +498,10 @@ body {
         font-weight: 400;
         color: #6f6e6e;
         min-height: 30px;
-        background: #ffffff; //<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+        background: #ffffff;
         border: none;
         border-left: 1px solid #ebebeb;
         padding: 0px 12px;
-
-        &::marker {
-          content: "\f0d7"; 
-          font-family: FontAwesome;
-        }
-
-        option::marker {
-          content: "\f0d7"; 
-          font-family: FontAwesome;
-        }
       }
     }
   }
@@ -690,8 +681,11 @@ body {
         font-weight: 400;
         color: #b3b2b2;
         list-style-type: "\f101";
-        font-family: FontAwesome;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+
+        &::marker {
+          font-family: FontAwesome;
+        }
       }
 
       input[type="radio"] {
@@ -708,6 +702,7 @@ body {
         background-color: #ffffff;
         border: 1px solid #eaeaea;
         margin-bottom: 15px;
+        padding: 15px;
       }
 
       button {
@@ -719,6 +714,7 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         color: #4a4a4a;
+        margin-top: 10px;
         margin-bottom: 80px;
         margin-right: 30px;
       }
@@ -735,15 +731,20 @@ body {
 }
 
 .shopping-cart {
-  padding-top: 66px;
+  padding: 66px calc(50% - 570px) 0;
 
   table {
     width: 100%;
     border-collapse: collapse;
+    text-align: center;
+
+    .align-left {
+      text-align: left;
+    }
 
     th, td {
       border-bottom: 1px solid #eaeaea;
-      padding: 20px 0;
+      padding: 21px 0;
     }
 
     th {
@@ -752,25 +753,193 @@ body {
       text-transform: uppercase;
       letter-spacing: -0.015em;
       color: #222222;
-      text-align: left;
     }
-  
-    figure img {
-      transition: 2s;
-  
-      &:hover {
-        transform: scale(1.5) rotateZ(360deg);
+
+    td {
+      font-size: 13px;
+      font-weight: 400;
+      color: #656565;
+    }
+
+    figure {
+      display: flex;
+      margin-bottom: 5px;
+
+      img {
+        transition: 0.3s;
+    
+        &:hover {
+          box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+          transform: scale(1.1);
+        }
+      }
+
+      figcaption {
+        margin-left: 20px;
+
+        h3 {
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #222222;
+          margin-top: 10px;
+        }
+
+        dl {
+          margin-top: 35px;
+
+          dt, dd {
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+
+          dt {
+            font-weight: 400;
+            color: #575757;
+
+            &::after {
+              content: ":";
+              font-weight: 400;
+              color: #575757;
+            }
+          }
+
+          dd {
+            font-weight: 300;
+            color: #6f6e6e;
+          }
+        }
       }
     }
 
+    input[type="number"] {
+      appearance: textfield;
+      width: 54px;
+      height: 30px;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      text-align: center;
+      color: #656565;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+    }
+    button.delete-item {
+      font-family: FontAwesome;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #c0c0c0;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+
+  .cart-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      padding: 16px 36px;
+      cursor: pointer;
+    }
   }
 }
 
 .order {
+  padding: 65px calc(50% - 570px) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+
+  &>div {
+    width: 31%;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  select, input {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 13px;
+    font-weight: 300;
+    color: #b1b1b1;
+    padding: 14px;
+  }
+
+  select {
+    appearance: none;
+  }
+
+  button {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 25px;
+  }
+
   .total {
+    background-color: #f5f3f3;
+    padding: 40px;
+
+    dl {
+      text-align: right;
+      border-bottom: 1px solid #e2e2e2;
+
+      .sub-total {
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4a4a4a;
+      }
+
+      .grand-total {
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+      }
+
+      dt, dd {
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-left: 15px;
+      }
+    }
+
     button {
-      width: 273px;
-      height: 50px;
+      width: 100%;
+      padding: 15px;
       font-size: 16px;
       font-weight: 700;
       text-transform: uppercase;
