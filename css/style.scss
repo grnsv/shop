@@ -86,7 +86,6 @@ body {
   width: 100%;
 	height: $slide-height;
 	overflow: hidden;
-  background: #e8e8e8;
   position: relative;
 
   .slide-holder {
@@ -106,6 +105,7 @@ body {
       justify-content: center;
       align-items: center;
       overflow: hidden;
+      background: #e8e8e8;
 
       figcaption {
         position: absolute;
@@ -1022,12 +1022,18 @@ body {
   }
 }
 
-#product-description {
+#image-slide {
+  height: 777px;
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+  text-align: center;
+  position: relative;
 
-  .image-slide {
-    height: 777px;
-    background-color: #f7f7f7;
-    border: 1px solid #eaeaea;
+  .buttons {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1046,5 +1052,173 @@ body {
         background-color: $main-color-pink;
       }
     }
+  }
+}
+
+#product-description {
+  margin: -86px calc(50% - 570px) 0px;
+  padding: 57px 249px 73px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  position: relative;
+  z-index: 1;
+  
+  .category-name {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: $main-color-pink;
+    border-bottom: 1px solid #eaeaea;
+    padding: 12px 0px;
+    position: relative;
+
+    &:hover {
+      border-bottom: 1px solid $add-color-pink;
+    }
+
+    .divider {
+      width: calc(300%/7);
+      display: inline-block;
+      border-bottom: 3px solid $add-color-pink;
+      position: absolute;
+      top: 0px;
+      left: calc(50% - 300%/14);
+      height: calc(100% + 2px);
+    }
+  }
+
+  .product-name {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    padding: 16px;
+    padding-bottom: 38px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+    padding: 19px 0px;
+  }
+
+  dl {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 153px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2f2f2f;
+
+    dt, dd {
+      display: inline-block;
+    }
+
+    dt {
+      color: #b9b9b9;
+
+      &::after {
+        content: ":";
+      }
+    }
+  }
+
+  .price {
+    padding: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $add-color-pink;
+  }
+
+  .product-order {
+    margin-top: 10px;
+    border-top: 1px solid #eaeaea;
+    padding: 48px 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .choose {
+      width: 144px;
+      text-align: left;
+      padding-bottom: 28px;
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2f2f2f;
+        padding: 12px 0px 13px;
+      }
+
+      select, input {
+        appearance: none;
+        font-family: 'Lato', Arial, sans-serif;
+        width: 100%;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        font-size: 13px;
+        font-weight: 400;
+        color: #bcbcbc;
+        padding: 10px;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+  
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          appearance: none;
+          margin: 0;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 55px;
+      background: #ffffff;
+      border: 1px solid $add-color-pink;
+      font-size: 16px;
+      font-weight: 700;
+      color: $add-color-pink;
+      padding: 14px calc(50% - 62px);
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &:hover {
+        background: $add-color-pink;
+        color: white;
+        border-color: transparent;
+
+        &>img {
+          border: 1px solid white;
+          border-radius: 10%;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
+
+#recommendations {
+  padding: 106px calc(50% - 570px) 0px;
+  text-align: center;
+  margin-bottom: -60px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    padding: 8px;
   }
 }

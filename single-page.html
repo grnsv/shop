@@ -125,44 +125,47 @@
       </ol>
     </section>
 
-    <section id="product-description">
-      <div class="image-slide">
+    <section id="image-slide">
+      <h2 style="position: absolute; visibility: hidden;">Image</h2>
+      <img src="img/image_slide.jpg" alt="image_slide">
+      <div class="buttons">
         <button><i class="fas fa-angle-left"></i></button>
-        <img src="img/image_slide.jpg" alt="image_slide">
         <button><i class="fas fa-angle-right"></i></button>
       </div>
-      <div class="description">
-        <a href="#" class="category-name">WOMEN COLLECTION</a>
-        <h2>Moschino Cheap And Chic</h2>
-        <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-        <dl>
-          <div>
-            <dt>MATERIAL</dt>
-            <dd>COTTON</dd>
-          </div>
-          <div>
-            <dt>DESIGNER</dt>
-            <dd>BINBURHAN</dd>
-          </div>
-        </dl>
-        <p class="price">$561</p>
-      </div>
+    </section>
+
+    <section id="product-description">
+      <h2 style="position: absolute; visibility: hidden;">Description</h2>
+      <a href="#" class="category-name">WOMEN COLLECTION<div class="divider"></div></a>
+      <h3 class="product-name">Moschino Cheap And Chic</h3>
+      <p class="description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+      <dl>
+        <div>
+          <dt>MATERIAL</dt>
+          <dd>COTTON</dd>
+        </div>
+        <div>
+          <dt>DESIGNER</dt>
+          <dd>BINBURHAN</dd>
+        </div>
+      </dl>
+      <p class="price">$561</p>
       <form action="#" class="product-order">
-        <div class="product-color">
+        <div class="choose">
           <label for="color">CHOOSE COLOR</label>
           <select name="color" id="color">
             <option value="red">Red</option>
           </select>
         </div>
-        <div class="product-size">
+        <div class="choose">
           <label for="size">CHOOSE SIZE</label>
           <select name="size" id="size">
             <option value="XXL">XXL</option>
           </select>
         </div>
-        <div class="product-quantity">
+        <div class="choose">
           <label for="quantity">QUANTITY</label>
-          <input type="number" name="quantity" id="quantity">
+          <input type="number" name="quantity" id="quantity" value="2" min="1">
         </div>
         <button type="submit">
           <img src="img/cart-pink.png" alt="cart">
