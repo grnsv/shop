@@ -82,6 +82,20 @@ body {
   }
 }
 
+button.delete-item {
+  font-family: FontAwesome;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c0c0c0;
+  border: none;
+  background: none;
+
+  &:hover {
+    color: $main-color-pink;
+  }
+}
+
 #slider {
   width: 100%;
 	height: $slide-height;
@@ -889,19 +903,6 @@ body {
       &::-webkit-inner-spin-button {
         appearance: none;
         margin: 0;
-      }
-    }
-    button.delete-item {
-      font-family: FontAwesome;
-      font-size: 16px;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: #c0c0c0;
-      border: none;
-      background: none;
-
-      &:hover {
-        color: $main-color-pink;
       }
     }
   }
