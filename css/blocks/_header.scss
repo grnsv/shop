@@ -217,10 +217,13 @@ header {
       }
 
       .cart-buttons {
-        padding: 8px;
+        padding: 2px;
         text-align: center;
 
-        button {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 225px;
           height: 50px;
           background-color: #ffffff;
@@ -228,8 +231,9 @@ header {
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase;
+          text-decoration: none;
           color: #4a4a4a;
-          margin: 6px;
+          margin: 12px;
 
           &.cart-checkout {
             border-color: $main-color-pink;
