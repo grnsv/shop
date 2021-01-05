@@ -41,6 +41,7 @@ $slide-height: 665px;
 }
 
 body {
+  min-width: 1140px; //non adaptive
   min-height: 100vh;
   display: flex;
   flex-direction: column;
