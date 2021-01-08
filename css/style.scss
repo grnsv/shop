@@ -225,7 +225,7 @@ button.delete-item {
   
     &:hover {
       box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
-      // transform: scale(1.1);
+      transform: scale(1.1);
   
       .product-cart {
         opacity: 1;
@@ -273,7 +273,7 @@ button.delete-item {
     button {
       min-width: 57px;
       min-height: 38px;
-      padding: 7px 15px;
+      padding: 7px 14px;
       border: 1px solid #ffffff;
       font-size: 13px;
       font-weight: 700;
