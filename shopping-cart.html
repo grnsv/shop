@@ -11,18 +11,102 @@
 </head>
 <body>
   <header>
-    <div class="container header-container">
-      <h1>
-        <a class="logo" href="index.html">
-          <img class="logo-img" src="img/logo.png" alt="BRAND">
-          <span>BRAN</span><span class="pink bold">D</span>
-        </a>
-      </h1>
-      
-      <div class="search">
-        <button class="browse-btn">
-          <span>Browse</span>
-          <ul class="drop">
+    <h1>
+      <a class="logo" href="index.html">
+        <img class="logo-img" src="img/logo.png" alt="BRAND">
+        <span>BRAN</span><span class="pink bold">D</span>
+      </a>
+    </h1>
+    
+    <div class="search">
+      <div class="browse drop">
+        <button class="browse-btn">Browse</button>
+        <ul class="browse-menu drop-list">
+          <li>Women
+            <ul>
+              <li><a href="#">Dresses</a></li>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Sweaters/Knits</a></li>
+              <li><a href="#">Jackets/Coats</a></li>
+              <li><a href="#">Blazers</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">Leggings/Pants</a></li>
+              <li><a href="#">Skirts/Shorts</a></li>
+              <li><a href="#">Accessories</a></li>
+            </ul>
+          </li>
+          <li>Men
+            <ul>
+              <li><a href="#">Tees/Tank tops</a></li>
+              <li><a href="#">Shirts/Polos</a></li>
+              <li><a href="#">Sweaters</a></li>
+              <li><a href="#">Sweatshirts/Hoodies</a></li>
+              <li><a href="#">Blazers</a></li>
+              <li><a href="#">Jackets/vests</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <form action="#" class="search-form">
+        <input class="search-field" type="search" placeholder="Search for Item..." required>
+        <input class="search-btn" type="submit" value="&#xf002;">
+      </form>
+    </div>
+
+    <div class="login">
+      <div class="cart drop">
+        <img src="img/cart.png" alt="cart">
+        <div class="cart-list drop-list">
+          <ul>
+            <li>
+              <figure>
+                <img src="img/cart_item1.jpg" alt="item1">
+                <figcaption>
+                  <h3>Rebox Zane</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <p class="cart-sum">
+                    <span class="cart-qty">1</span>  x   <span class="cart-price">250</span>
+                  </p>
+                </figcaption>
+              </figure>
+              <button class="delete-item"><i class="fas fa-times-circle"></i></button>
+            </li>
+            <li>
+              <figure>
+                <img src="img/cart_item2.jpg" alt="item2">
+                <figcaption>
+                  <h3>Rebox Zane</h3>
+                  <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <p class="cart-sum">
+                    <span class="cart-qty">1</span>  x   <span class="cart-price">250</span>
+                  </p>
+                </figcaption>
+              </figure>
+              <button class="delete-item"><i class="fas fa-times-circle"></i></button>
+            </li>
+          </ul>
+          <div class="cart-total">
+            <span>TOTAL</span>
+            <span id="cart-total">500.00</span>
+          </div>
+          <div class="cart-buttons">
+            <a href="checkout.html" class="cart-checkout">Checkout</a>
+            <a href="#">Go to cart</a>
+          </div>
+        </div>
+      </div>
+      <button class="account">My Account</button>
+    </div>
+
+    <nav>
+      <h2 style="position: absolute; visibility: hidden;">Menu</h2>
+      <ul class="menu">
+        <li class="drop"><a href="index.html">Home</a>
+          <ul class="mega-menu drop-list">
             <li>Women
               <ul>
                 <li><a href="#">Dresses</a></li>
@@ -34,65 +118,316 @@
                 <li><a href="#">Leggings/Pants</a></li>
                 <li><a href="#">Skirts/Shorts</a></li>
                 <li><a href="#">Accessories</a></li>
-                <li><a href="#">Bags/Purses</a></li>
-                <li><a href="#">Swimwear/Underwear</a></li>
-                <li><a href="#">Nightwear</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Beauty</a></li>
               </ul>
             </li>
-            <li>Men
+            <li>Women
               <ul>
-                <li><a href="#">Tees/Tank tops</a></li>
-                <li><a href="#">Shirts/Polos</a></li>
-                <li><a href="#">Sweaters</a></li>
-                <li><a href="#">Sweatshirts/Hoodies</a></li>
-                <li><a href="#">Blazers</a></li>
-                <li><a href="#">Jackets/vests</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
               </ul>
             </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
           </ul>
-        </button>
-        
-        <form action="#" class="search-form">
-          <input class="search-field" type="search" placeholder="Search for Item..." required>
-          <input class="search-btn" type="submit" value="&#xf002;">
-        </form>
-      </div>
-
-      <div class="login">
-        <a href="#"><img src="img/cart.png" alt="cart"></a>
-        <button class="account">My Account</button>
-      </div>
-
-      <nav>
-        <h2 style="position: absolute; visibility: hidden;">Menu</h2>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Man</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">Kids</a></li>
-          <li><a href="#">Accoseriese</a></li>
-          <li><a href="#">Featured</a></li>
-          <li><a href="#">Hot Deals</a></li>
-        </ul>
-      </nav>
-    </div>
+        </li>
+        <li class="drop"><a href="catalog.html">Man</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Women</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Kids</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Accoseriese</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Featured</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+        <li class="drop"><a href="#">Hot Deals</a>
+          <ul class="mega-menu drop-list">
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+                <li><a href="#">Blazers</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Leggings/Pants</a></li>
+                <li><a href="#">Skirts/Shorts</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+              </ul>
+            </li>
+            <li>Women
+              <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Sweaters/Knits</a></li>
+                <li><a href="#">Jackets/Coats</a></li>
+              </ul>
+            </li>
+            <li><a href="#"><figure class="promo">
+              <img src="img/promo.jpg" alt="promo">
+              <figcaption>Super<br>sale!</figcaption>
+            </figure></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="breadcrumb">
-      <div class="container breadcrumb-container">
-        <h2>New Arrivals</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Men</a></li>
-          <li>New Arrivals</li>
-        </ol>
-      </div>
+    <section id="breadcrumb">
+      <h2>New Arrivals</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Men</a></li>
+        <li>New Arrivals</li>
+      </ol>
     </section>
 
-    <section class="shopping-cart">
+    <section id="shopping-cart">
       <h2 style="position: absolute; visibility: hidden;">Shopping Cart</h2>
       <table>
         <thead>
@@ -109,7 +444,7 @@
           <tr>
             <td class="align-left">
               <figure>
-                <a href="#"><img src="img/cart-product1.jpg" alt="cart-product1"></a>
+                <a href="single-page.html"><img src="img/cart-product1.jpg" alt="cart-product1"></a>
                 <figcaption>
                   <h3>Mango  People  T-shirt</h3>
                   <dl>
@@ -136,7 +471,7 @@
           <tr>
             <td class="align-left">
               <figure>
-                <a href="#"><img src="img/cart-product2.jpg" alt="cart-product2"></a>
+                <a href="single-page.html"><img src="img/cart-product2.jpg" alt="cart-product2"></a>
                 <figcaption>
                   <h3>Mango  People  T-shirt</h3>
                   <dl>
@@ -163,7 +498,7 @@
           <tr>
             <td class="align-left">
               <figure>
-                <a href="#"><img src="img/cart-product3.jpg" alt="cart-product3"></a>
+                <a href="single-page.html"><img src="img/cart-product3.jpg" alt="cart-product3"></a>
                 <figcaption>
                   <h3>Mango  People  T-shirt</h3>
                   <dl>
@@ -196,7 +531,7 @@
         </div>
     </section>
 
-    <section class="order">
+    <section id="order">
       <h2 style="position: absolute; visibility: hidden;">Order</h2>
       <div class="address">
         <h3>Shipping Adress</h3>
@@ -225,14 +560,12 @@
             <dd class="pink">$900</dd>
           </div>
         </dl>
-        <button>proceed to checkout</button>
+        <a href="checkout.html">proceed to checkout</a>
       </div>
     </section>
-  </main>
 
-  <div class="feedback">
-    <div class="container feedback-container">
-      <section class="review">
+    <div id="feedback">
+      <section id="review">
         <h2 style="position: absolute; visibility: hidden;">Review</h2>
         <div class="review-left">
           <img src="img/review1.png" alt="review1">
@@ -248,7 +581,7 @@
           </div>
         </div>
       </section>
-      <section class="subscribe">
+      <section id="subscribe">
         <h2>Subscribe</h2>
         <p>FOR OUR NEWLETTER AND PROMOTION</p>
         <form action="#" class="subscribe-form">
@@ -256,10 +589,10 @@
         </form>
       </section>
     </div>
-  </div>
+  </main>
 
   <footer>
-    <div class="container footer-top">
+    <div class="footer-top">
       <div>
         <a class="logo" href="index.html">
           <img class="logo-img" src="img/logo.png" alt="BRAND">
@@ -277,7 +610,7 @@
       </div>
       <div class="footer-list">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">How It Works</a></li>
@@ -295,7 +628,7 @@
       </div>
       <div class="footer-list">
         <ul>
-          <li><a href="#">Men</a></li>
+          <li><a href="catalog.html">Men</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">Child</a></li>
           <li><a href="#">Apparel</a></li>
@@ -304,26 +637,24 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container footer-bottom-container">
-        <small class="copy">&copy;&nbsp;2017 Brand All Rights Reserved.</small>
-        <ul class="socials">
-          <li><a href="#">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a></li>
-          <li><a href="#">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a></li>
-          <li><a href="#">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a></li>
-          <li><a href="#">
-            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-          </a></li>
-          <li><a href="#">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </a></li>
-        </ul>
-      </div>
+      <small class="copy">&copy;&nbsp;2017 Brand All Rights Reserved.</small>
+      <ul class="socials">
+        <li><a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a></li>
+      </ul>
     </div>
   </footer>
 </body>
