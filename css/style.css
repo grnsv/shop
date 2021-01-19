@@ -118,6 +118,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   z-index: 1;
@@ -450,11 +452,15 @@ header .login .account.account::after {
   font-family: FontAwesome;
 }
 
-header .menu {
+header nav {
+  width: 100%;
+}
+
+header nav .menu {
   position: absolute;
   top: 100px;
   left: 0px;
-  width: 100%;
+  min-width: 100%;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,7 +473,7 @@ header .menu {
           align-items: center;
 }
 
-header .menu > li {
+header nav .menu > li {
   list-style: none;
   height: 50px;
   border-top: 3px solid transparent;
@@ -475,7 +481,7 @@ header .menu > li {
   position: relative;
 }
 
-header .menu > li > a {
+header nav .menu > li > a {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
@@ -485,11 +491,11 @@ header .menu > li > a {
   padding: 14px 23px;
 }
 
-header .menu > li:hover {
+header nav .menu > li:hover {
   border-bottom: 3px solid #ef5b70;
 }
 
-header .menu > li .mega-menu {
+header nav .menu > li .mega-menu {
   top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,11 +516,11 @@ header .menu > li .mega-menu {
   overflow: hidden;
 }
 
-header .menu > li .mega-menu > li {
+header nav .menu > li .mega-menu > li {
   padding: 18px 23px 8px;
 }
 
-header .menu > li .mega-menu > li ul {
+header nav .menu > li .mega-menu > li ul {
   min-width: 235px;
   margin-top: 5px;
   padding-top: 7px;
@@ -523,23 +529,23 @@ header .menu > li .mega-menu > li ul {
   text-transform: none;
 }
 
-header .menu > li .mega-menu > li ul li {
+header nav .menu > li .mega-menu > li ul li {
   padding: 4.6px 0px;
 }
 
-header .menu > li .mega-menu > li ul li a {
+header nav .menu > li .mega-menu > li ul li a {
   text-decoration: none;
   color: #646464;
 }
 
-header .menu > li .mega-menu > li .promo {
+header nav .menu > li .mega-menu > li .promo {
   background-color: #efefef;
   position: relative;
   margin-left: -17px;
   margin-top: -12px;
 }
 
-header .menu > li .mega-menu > li .promo figcaption {
+header nav .menu > li .mega-menu > li .promo figcaption {
   position: absolute;
   bottom: 10px;
   right: 10px;
