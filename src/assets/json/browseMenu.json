@@ -1,0 +1,66 @@
+{
+  "Women": [
+    {
+      "link": "/catalog",
+      "title": "Dresses"
+    },
+    {
+      "link": "/catalog",
+      "title": "Tops"
+    },
+    {
+      "link": "/catalog",
+      "title": "Sweaters/Knits"
+    },
+    {
+      "link": "/catalog",
+      "title": "Jackets/Coats"
+    },
+    {
+      "link": "/catalog",
+      "title": "Blazers"
+    },
+    {
+      "link": "/catalog",
+      "title": "Denim"
+    },
+    {
+      "link": "/catalog",
+      "title": "Leggings/Pants"
+    },
+    {
+      "link": "/catalog",
+      "title": "Skirts/Shorts"
+    },
+    {
+      "link": "/catalog",
+      "title": "Accessories"
+    }
+  ],
+  "Men": [
+    {
+      "link": "/catalog",
+      "title": "Tees/Tank tops"
+    },
+    {
+      "link": "/catalog",
+      "title": "Shirts/Polos"
+    },
+    {
+      "link": "/catalog",
+      "title": "Sweaters"
+    },
+    {
+      "link": "/catalog",
+      "title": "Sweatshirts/Hoodies"
+    },
+    {
+      "link": "/catalog",
+      "title": "Blazers"
+    },
+    {
+      "link": "/catalog",
+      "title": "Jackets/vests"
+    }
+  ]
+}
