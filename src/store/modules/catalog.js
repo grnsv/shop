@@ -8,10 +8,10 @@ export default {
     goods(state) {
       return state.goods;
     },
-    getImgById: (state) => (id) => {
-      const good = state.goods.find((item) => item.id_product === id);
-      return good.img;
-    },
+    // getImgById: (state) => (id) => {
+    //   const good = state.goods.find((item) => item.id_product === id);
+    //   return good.img;
+    // },
   },
   mutations: {
     SET_GOODS_LIST(state, goods) {
