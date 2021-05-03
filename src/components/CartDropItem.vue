@@ -17,7 +17,9 @@
         </p>
       </figcaption>
     </figure>
-    <button class="delete-item"><i class="fas fa-times-circle"></i></button>
+    <button class="delete-item" @click="$emit('remove', good)">
+      <i class="fas fa-times-circle"></i>
+    </button>
   </li>
 </template>
 

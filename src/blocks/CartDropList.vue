@@ -3,7 +3,8 @@
     <router-link to="/cart"><img src="@/assets/images/cart.png" alt="cart"></router-link>
     <div class="cart-list drop-list">
       <ul>
-        <cart-drop-item v-for="good of cartItems.contents" :good="good" :key="good.id_product"/>
+        <cart-drop-item v-for="good of cartItems.contents"
+        :good="good" :key="good.id_product" @remove="removeCartItem"/>
       </ul>
       <div class="cart-total">
         <span>TOTAL</span>
@@ -28,7 +29,7 @@ export default {
     ...mapGetters(['cartItems']),
   },
   methods: {
-    ...mapActions(['getCartList']),
+    ...mapActions(['getCartList', 'removeCartItem']),
   },
   created() {
     this.getCartList();

@@ -13,7 +13,8 @@
         </tr>
       </thead>
       <tbody>
-        <cart-item v-for="good of cartItems.contents" :good="good" :key="good.id_product"/>
+        <cart-item v-for="good of cartItems.contents"
+        :good="good" :key="good.id_product" @remove="removeCartItem"/>
       </tbody>
       </table>
 
@@ -35,7 +36,7 @@ export default {
     ...mapGetters(['cartItems']),
   },
   methods: {
-    ...mapActions(['getCartList']),
+    ...mapActions(['getCartList', 'removeCartItem']),
   },
   created() {
     this.getCartList();

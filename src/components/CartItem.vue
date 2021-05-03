@@ -26,13 +26,17 @@
     </td>
     <td>FREE</td>
     <td>${{good.price * good.quantity}}</td>
-    <td><button class="delete-item"><i class="fas fa-times-circle"></i></button></td>
+    <td>
+      <button class="delete-item" @click="$emit('remove', good)">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </td>
   </tr>
 </template>
 
 <script>
 export default {
-  name: 'CatalogItem',
+  name: 'CartItem',
   props: ['good'],
 };
 </script>
