@@ -11,8 +11,6 @@ router.get('/', (req, res) => {
     if (err) {
       res.sendStatus(404, JSON.stringify({ result: 0, text: err }));
     } else {
-      res.setHeader('Access-Control-Allow-Origin', '*');
-      res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
       res.send(data);
     }
   });

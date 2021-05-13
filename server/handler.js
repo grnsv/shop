@@ -15,12 +15,9 @@ const handler = (req, res, action, file) => {
     } else {
       const { name, newCart } = actions[action](JSON.parse(data), req);
       fs.writeFile(file, newCart, (error) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
         if (error) {
           res.send('{"result": 0}');
         } else {
-          console.log(name);
           logger(name, action);
           res.send('{"result": 1}');
         }

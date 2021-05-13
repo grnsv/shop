@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const cartRouter = require('./cartRouter');
@@ -7,6 +8,7 @@ const homeProductsRouter = require('./homeProducts');
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use('/', express.static(path.resolve(__dirname, '../public')));
 app.use('/api/cart', cartRouter);
@@ -21,8 +23,6 @@ app.get('/api/products', (req, res) => {
       res.send(JSON.stringify({ result: 0, text: err }));
       // res.sendStatus(404, JSON.stringify({result: 0, text: err}));
     } else {
-      res.setHeader('Access-Control-Allow-Origin', '*');
-      res.setHeader('Access-Control-Allow-Headers', 'origin, content-type, accept');
       res.send(data);
     }
   });

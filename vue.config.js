@@ -1,4 +1,7 @@
 module.exports = {
+  devServer: {
+    proxy: 'http://localhost:8080',
+  },
   chainWebpack: (config) => {
     config
       .plugin('html')
