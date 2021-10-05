@@ -12,10 +12,10 @@ export default {
   name: 'CatalogList',
   components: { CatalogItem },
   computed: {
-    ...mapGetters(['goods']),
+    ...mapGetters(['goods', 'cartItems']),
   },
   methods: {
-    ...mapActions(['getGoodsList']),
+    ...mapActions(['getGoodsList', 'addCartItem']),
   },
   created() {
     this.getGoodsList();

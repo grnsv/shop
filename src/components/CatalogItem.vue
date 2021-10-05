@@ -10,7 +10,7 @@
       </figcaption>
     </figure>
     <div class="product-cart">
-      <button>
+      <button @click="$emit('add', good)">
         <img src="@/assets/images/cart-white.png" alt="cart">
         <span>Add to Cart</span>
       </button>

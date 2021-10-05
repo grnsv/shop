@@ -59,6 +59,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
 import BreadCrumb from '@/blocks/BreadCrumb.vue';
 import Feedback from '@/blocks/Feedback.vue';
 import Recommendations from '@/blocks/Recommendations.vue';
@@ -69,6 +70,12 @@ export default {
     BreadCrumb,
     Feedback,
     Recommendations,
+  },
+  computed: {
+    ...mapGetters(['cartItems']),
+  },
+  methods: {
+    ...mapActions(['addCartItem']),
   },
 };
 </script>

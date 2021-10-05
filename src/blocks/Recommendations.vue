@@ -15,10 +15,10 @@ export default {
   name: 'Recommendations',
   components: { CatalogItem },
   computed: {
-    ...mapGetters(['recommendations']),
+    ...mapGetters(['recommendations', 'cartItems']),
   },
   methods: {
-    ...mapActions(['getRecommendList']),
+    ...mapActions(['getRecommendList', 'addCartItem']),
   },
   created() {
     this.getRecommendList();

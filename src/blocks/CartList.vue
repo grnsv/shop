@@ -38,8 +38,5 @@ export default {
   methods: {
     ...mapActions(['getCartList', 'removeCartItem']),
   },
-  created() {
-    this.getCartList();
-  },
 };
 </script>

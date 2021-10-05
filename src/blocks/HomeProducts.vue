@@ -20,10 +20,10 @@ export default {
   name: 'HomeProducts',
   components: { CatalogItem },
   computed: {
-    ...mapGetters(['homeProducts']),
+    ...mapGetters(['homeProducts', 'cartItems']),
   },
   methods: {
-    ...mapActions(['getHomeProductsList']),
+    ...mapActions(['getHomeProductsList', 'addCartItem']),
   },
   created() {
     this.getHomeProductsList();
