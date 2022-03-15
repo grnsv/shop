@@ -1,0 +1,166 @@
+[
+  {
+    "id_product": "image1",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image1-263x280.jpg"
+  },
+  {
+    "id_product": "image2",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image2-263x280.jpg"
+  },
+  {
+    "id_product": "image3",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image3-263x280.jpg"
+  },
+  {
+    "id_product": "image4",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image4-263x280.jpg"
+  },
+  {
+    "id_product": "image5",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image5-263x280.jpg"
+  },
+  {
+    "id_product": "image6",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image6-263x280.jpg"
+  },
+  {
+    "id_product": "image7",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image7-263x280.jpg"
+  },
+  {
+    "id_product": "image8",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image8-263x280.jpg"
+  },
+  {
+    "id_product": "image9",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/image9-263x280.jpg"
+  },
+
+
+  {
+    "id_product": "item-1",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-1.png"
+  },
+  {
+    "id_product": "item-2",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-2.png"
+  },
+  {
+    "id_product": "item-3",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-3.png"
+  },
+  {
+    "id_product": "item-4",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-4.png"
+  },
+  {
+    "id_product": "item-5",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-5.png"
+  },
+  {
+    "id_product": "item-6",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-6.png"
+  },
+  {
+    "id_product": "item-7",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-7.png"
+  },
+  {
+    "id_product": "item-8",
+    "product_name": "Mango  People  T-shirt",
+    "price": 52.00,
+    "img": "/static/images/item-8.png"
+  },
+
+
+  {
+    "id_product": "recommend_1",
+    "product_name": "BLAZE LEGGINGS",
+    "price": 52.00,
+    "img": "/static/images/recommend_1.jpg"
+  },
+  {
+    "id_product": "recommend_2",
+    "product_name": "ALEXA SWEATER",
+    "price": 52.00,
+    "img": "/static/images/recommend_2.jpg"
+  },
+  {
+    "id_product": "recommend_3",
+    "product_name": "AGNES TOP",
+    "price": 52.00,
+    "img": "/static/images/recommend_3.jpg"
+  },
+  {
+    "id_product": "recommend_4",
+    "product_name": "SYLVA SWEATER",
+    "price": 52.00,
+    "img": "/static/images/recommend_4.jpg"
+  },
+
+
+  {
+    "id_product": "item1",
+    "product_name": "Rebox Zane",
+    "price": 250,
+    "img": "/static/images/cart_item1.jpg"
+  },
+  {
+    "id_product": "item2",
+    "product_name": "Rebox Zane",
+    "price": 250,
+    "img": "/static/images/cart_item2.jpg"
+  },
+
+
+  {
+    "id_product": "cart-product1",
+    "product_name": "Mango  People  T-shirt",
+    "price": 150,
+    "img": "/static/images/cart-product1.jpg"
+  },
+  {
+    "id_product": "cart-product2",
+    "product_name": "Mango  People  T-shirt",
+    "price": 150,
+    "img": "/static/images/cart-product2.jpg"
+  },
+  {
+    "id_product": "cart-product3",
+    "product_name": "Mango  People  T-shirt",
+    "price": 150,
+    "img": "/static/images/cart-product3.jpg"
+  }
+]
