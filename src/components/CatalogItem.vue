@@ -6,7 +6,9 @@
         <h3 class="product-name">
           <router-link to="/single-page">{{good.product_name}}</router-link>
         </h3>
-        <p class="product-price">${{good.price}}</p>
+        <p class="product-price">
+          {{ good.price.toLocaleString("en-US", {style: "currency", currency: "USD"}) }}
+        </p>
       </figcaption>
     </figure>
     <div class="product-cart">
@@ -26,7 +28,6 @@
 
 <script>
 export default {
-  name: 'CatalogItem',
   props: ['good'],
 };
 </script>

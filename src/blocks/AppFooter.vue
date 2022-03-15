@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <footer>
     <div class="footer-top">
       <div>
@@ -12,10 +11,19 @@
       <div class="footer-title">INFORMATION</div>
       <div class="footer-title">SHOP CATEGORY</div>
       <div class="footer-text">
-        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.</p>
-        <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-        <p>Objectively strategize seamless relationships via resource sucking testing procedures. Proactively cultivate next-generation results for value-added methodologies. Dynamically plagiarize unique methodologies after performance based methodologies. Monotonectally empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically orchestrate resource sucking scenarios after alternative synergy.</p>
-        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant technologies. Objectively facilitate progressive.</p>
+        <p>Objectively transition extensive data rather than cross functional solutions.
+          Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits.
+          Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit
+          partnerships.</p>
+        <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize
+          superior initiatives for wireless technologies. Dynamically optimize.</p>
+        <p>Objectively strategize seamless relationships via resource sucking testing procedures.
+          Proactively cultivate next-generation results for value-added methodologies. Dynamically
+          plagiarize unique methodologies after performance based methodologies. Monotonectally
+          empower stand-alone mindshare rather than ubiquitous opportunities. Dynamically
+          orchestrate resource sucking scenarios after alternative synergy.</p>
+        <p>Compellingly envisioneer corporate methods of&nbsp;empowerment before standards compliant
+          technologies. Objectively facilitate progressive.</p>
       </div>
       <div class="footer-list">
         <ul>
@@ -49,19 +57,19 @@
       <small class="copy">&copy;&nbsp;2017 Brand All Rights Reserved.</small>
       <ul class="socials">
         <li><router-link to="/">
-          <i class="fab fa-facebook-f"></i>
+          <font-awesome-icon :icon="['fab', 'facebook-f']" />
         </router-link></li>
         <li><router-link to="/">
-          <i class="fab fa-twitter"></i>
+          <font-awesome-icon :icon="['fab', 'twitter']" />
         </router-link></li>
         <li><router-link to="/">
-          <i class="fab fa-linkedin-in"></i>
+          <font-awesome-icon :icon="['fab', 'linkedin-in']" />
         </router-link></li>
         <li><router-link to="/">
-          <i class="fab fa-pinterest-p"></i>
+          <font-awesome-icon :icon="['fab', 'pinterest-p']" />
         </router-link></li>
         <li><router-link to="/">
-          <i class="fab fa-google-plus-g"></i>
+          <font-awesome-icon :icon="['fab', 'google-plus-g']" />
         </router-link></li>
       </ul>
     </div>
@@ -70,6 +78,5 @@
 
 <script>
 export default {
-  name: 'AppFooter',
 };
 </script>

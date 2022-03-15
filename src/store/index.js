@@ -1,13 +1,10 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import catalog from './modules/catalog';
-import cart from './modules/cart';
-import recommendations from './modules/recommendations';
-import homeProducts from './modules/homeProducts';
+import { createStore } from 'vuex';
+import catalog from '@/store/modules/catalog';
+import cart from '@/store/modules/cart';
+import recommendations from '@/store/modules/recommendations';
+import homeProducts from '@/store/modules/homeProducts';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+export default createStore({
   modules: {
     catalog,
     cart,

@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <main>
     <section id="slider">
       <h2 style="position: absolute; visibility: hidden;">Slider</h2>
@@ -71,11 +70,11 @@
       </div>
     </section>
 
-    <home-products/>
+    <home-products />
 
-    <feature/>
+    <feature />
 
-    <feedback/>
+    <feedback />
   </main>
 </template>
 
@@ -90,6 +89,5 @@ export default {
     Feedback,
     HomeProducts,
   },
-  name: 'Home',
 };
 </script>

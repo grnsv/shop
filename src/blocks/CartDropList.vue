@@ -4,7 +4,7 @@
     <div class="cart-list drop-list">
       <ul>
         <cart-drop-item v-for="good of cartItems.contents"
-        :good="good" :key="good.id_product" @remove="removeCartItem"/>
+        :good="good" :key="good.id_product" @remove="removeCartItem" />
       </ul>
       <div class="cart-total">
         <span>TOTAL</span>
@@ -23,7 +23,6 @@ import { mapActions, mapGetters } from 'vuex';
 import CartDropItem from '@/components/CartDropItem.vue';
 
 export default {
-  name: 'CartDropList',
   components: { CartDropItem },
   computed: {
     ...mapGetters(['cartItems']),

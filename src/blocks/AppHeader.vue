@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <header>
     <h1>
       <router-link to="/" class="logo">
@@ -11,27 +10,27 @@
       <div class="browse drop">
         <button class="browse-btn">
           <span>Browse</span>
-          <i class="fas fa-caret-down"></i>
+          <font-awesome-icon icon="caret-down" />
         </button>
-        <browse-menu/>
+        <browse-menu />
       </div>
       <form action="#" class="search-form">
         <input class="search-field" type="search" placeholder="Search for Item..." required>
-        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+        <button class="search-btn" type="submit"><font-awesome-icon icon="search" /></button>
       </form>
     </div>
 
     <div class="login">
-      <cart-drop-list/>
+      <cart-drop-list />
       <button class="account">
         <span>My Account</span>
-        <i class="fas fa-caret-down"></i>
+        <font-awesome-icon icon="caret-down" />
       </button>
     </div>
 
     <nav>
       <h2 style="position: absolute; visibility: hidden;">Menu</h2>
-      <mega-menu/>
+      <mega-menu />
     </nav>
   </header>
 </template>
@@ -47,6 +46,5 @@ export default {
     MegaMenu,
     CartDropList,
   },
-  name: 'AppHeader',
 };
 </script>

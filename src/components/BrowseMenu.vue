@@ -14,7 +14,6 @@
 import data from '@/assets/json/browseMenu.json';
 
 export default {
-  name: 'BrowseMenu',
   data() {
     return {
       categories: data,

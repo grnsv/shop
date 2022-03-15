@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export default {
-  state: {
+  state: () => ({
     recommendations: [],
-  },
+  }),
   getters: {
     recommendations(state) {
       return state.recommendations;
@@ -16,8 +16,12 @@ export default {
   },
   actions: {
     async getRecommendList({ commit }) {
-      const { data: recommendations } = await axios.get('http://localhost:5555/api/recommendations');
-      commit('SET_RECOMMEND_LIST', recommendations);
+      try {
+        const response = await axios.get('http://localhost:5555/api/recommendations');
+        commit('SET_RECOMMEND_LIST', response.data);
+      } catch (e) {
+        console.log(e);
+      }
     },
   },
 };

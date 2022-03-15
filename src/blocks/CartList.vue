@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <cart-item v-for="good of cartItems.contents"
-        :good="good" :key="good.id_product" @remove="removeCartItem"/>
+        :good="good" :key="good.id_product" @remove="removeCartItem" />
       </tbody>
       </table>
 
@@ -30,7 +30,6 @@ import { mapActions, mapGetters } from 'vuex';
 import CartItem from '@/components/CartItem.vue';
 
 export default {
-  name: 'CartList',
   components: { CartItem },
   computed: {
     ...mapGetters(['cartItems']),

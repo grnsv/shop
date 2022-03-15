@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <section id="breadcrumb">
       <h2>New Arrivals</h2>
       <ol>
@@ -12,6 +11,5 @@
 
 <script>
 export default {
-  name: 'BreadCrumb',
 };
 </script>

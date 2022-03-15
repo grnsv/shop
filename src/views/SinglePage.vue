@@ -1,22 +1,27 @@
 <template>
-  <!-- eslint-disable max-len -->
   <main>
-    <bread-crumb/>
+    <bread-crumb />
 
     <section id="image-slide">
       <h2 style="position: absolute; visibility: hidden;">Image</h2>
       <img src="@/assets/images/image_slide.jpg" alt="image_slide">
       <div class="buttons">
-        <button><i class="fas fa-angle-left"></i></button>
-        <button><i class="fas fa-angle-right"></i></button>
+        <button><font-awesome-icon icon="angle-left" /></button>
+        <button><font-awesome-icon icon="angle-right" /></button>
       </div>
     </section>
 
     <section id="product-description">
       <h2 style="position: absolute; visibility: hidden;">Description</h2>
-      <router-link to="/catalog" class="category-name">WOMEN COLLECTION<div class="divider"></div></router-link>
+      <router-link to="/catalog" class="category-name">
+        WOMEN COLLECTION
+        <div class="divider"></div>
+      </router-link>
       <h3 class="product-name">Moschino Cheap And Chic</h3>
-      <p class="description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+      <p class="description">Compellingly actualize fully researched processes before proactive
+        outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+        services. Completely visualize parallel core competencies rather than exceptional
+        portals.</p>
       <dl>
         <div>
           <dt>MATERIAL</dt>
@@ -52,9 +57,9 @@
       </form>
     </section>
 
-    <recommendations/>
+    <recommendations />
 
-    <feedback/>
+    <feedback />
   </main>
 </template>
 
@@ -65,7 +70,6 @@ import Feedback from '@/blocks/Feedback.vue';
 import Recommendations from '@/blocks/Recommendations.vue';
 
 export default {
-  name: 'SinglePage',
   components: {
     BreadCrumb,
     Feedback,

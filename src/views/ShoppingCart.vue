@@ -1,12 +1,12 @@
 <template>
   <main>
-    <bread-crumb/>
+    <bread-crumb />
 
-    <cart-list/>
+    <cart-list />
 
-    <cart-order/>
+    <cart-order />
 
-    <feedback/>
+    <feedback />
   </main>
 </template>
 
@@ -17,7 +17,6 @@ import CartList from '@/blocks/CartList.vue';
 import CartOrder from '@/blocks/CartOrder.vue';
 
 export default {
-  name: 'ShoppingCart',
   components: {
     BreadCrumb,
     Feedback,

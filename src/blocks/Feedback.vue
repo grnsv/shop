@@ -1,5 +1,4 @@
 <template>
-  <!-- eslint-disable max-len -->
   <div id="feedback">
     <section id="review">
       <h2 style="position: absolute; visibility: hidden;">Review</h2>
@@ -7,7 +6,8 @@
         <img src="@/assets/images/review1.png" alt="review1">
       </div>
       <div class="review-right">
-        <q>Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium</q>
+        <q>Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus
+          condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium</q>
         <p class="review-name">Bin Burhan</p>
         <p class="review-location">Dhaka, Bd</p>
         <div class="pagination">
@@ -21,7 +21,8 @@
       <h2>Subscribe</h2>
       <p>FOR OUR NEWLETTER AND PROMOTION</p>
       <form action="#" class="subscribe-form">
-        <input class="subscribe-field" type="email" placeholder="Enter Your Email" required><input class="subscribe-btn" type="submit" value="Subscribe">
+        <input class="subscribe-field" type="email" placeholder="Enter Your Email" required>
+        <input class="subscribe-btn" type="submit" value="Subscribe">
       </form>
     </section>
   </div>
@@ -29,6 +30,5 @@
 
 <script>
 export default {
-  name: 'Feedback',
 };
 </script>

@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 export default {
-  state: {
+  state: () => ({
     homeProducts: [],
-  },
+  }),
   getters: {
     homeProducts(state) {
       return state.homeProducts;
@@ -16,8 +16,12 @@ export default {
   },
   actions: {
     async getHomeProductsList({ commit }) {
-      const { data: homeProducts } = await axios.get('http://localhost:5555/api/homeProducts');
-      commit('SET_HOME_PRODUCTS_LIST', homeProducts);
+      try {
+        const response = await axios.get('http://localhost:5555/api/homeProducts');
+        commit('SET_HOME_PRODUCTS_LIST', response.data);
+      } catch (e) {
+        console.log(e);
+      }
     },
   },
 };

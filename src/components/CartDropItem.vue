@@ -5,11 +5,11 @@
       <figcaption>
         <h3>{{good.product_name}}</h3>
         <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
+          <font-awesome-icon icon="star" />
+          <font-awesome-icon icon="star" />
+          <font-awesome-icon icon="star" />
+          <font-awesome-icon icon="star" />
+          <font-awesome-icon icon="star-half-alt" />
         </div>
         <p class="cart-sum">
           <span class="cart-qty">{{good.quantity}}</span>  x   <span class="cart-price">
@@ -18,14 +18,13 @@
       </figcaption>
     </figure>
     <button class="delete-item" @click="$emit('remove', good)">
-      <i class="fas fa-times-circle"></i>
+      <font-awesome-icon icon="times-circle" />
     </button>
   </li>
 </template>
 
 <script>
 export default {
-  name: 'CatalogItem',
   props: ['good'],
 };
 </script>

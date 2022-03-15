@@ -1,7 +1,6 @@
 <template>
-  <!-- eslint-disable max-len -->
   <main>
-    <bread-crumb/>
+    <bread-crumb />
 
     <section id="checkout">
       <h2 style="position: absolute; visibility: hidden;">Checkout</h2>
@@ -31,8 +30,14 @@
                     <h3>register and save time!</h3>
                     <p>Register with us for future convenience</p>
                     <ul>
-                      <li>Fast and easy checkout</li>
-                      <li>Easy access to your order history and status</li>
+                      <li>
+                        <font-awesome-icon icon="angle-double-right" />
+                        Fast and easy checkout
+                      </li>
+                      <li>
+                        <font-awesome-icon icon="angle-double-right" />
+                        Easy access to your order history and status
+                      </li>
                     </ul>
                   </td>
                   <td>
@@ -87,7 +92,7 @@
       </ol>
     </section>
 
-    <feedback/>
+    <feedback />
   </main>
 </template>
 
@@ -96,7 +101,6 @@ import BreadCrumb from '@/blocks/BreadCrumb.vue';
 import Feedback from '@/blocks/Feedback.vue';
 
 export default {
-  name: 'Checkout',
   components: {
     BreadCrumb,
     Feedback,

@@ -37,7 +37,6 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'CartOrder',
   computed: {
     ...mapGetters(['cartItems']),
   },

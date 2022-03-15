@@ -1,13 +1,16 @@
 <template>
-  <!-- eslint-disable max-len -->
   <main>
-    <bread-crumb/>
+    <bread-crumb />
 
     <div class="catalog-container">
       <aside id="sidebar">
         <h2 style="position: absolute; visibility: hidden;">Sidebar</h2>
         <details class="sidebar-filter" open>
-          <summary>Category</summary>
+          <summary>
+            Category
+            <font-awesome-icon class="opened" icon="caret-up" />
+            <font-awesome-icon class="closed" icon="caret-down" />
+          </summary>
           <ul>
             <li><a href="#">Accessories</a></li>
             <li><a href="#">Bags</a></li>
@@ -25,12 +28,20 @@
           </ul>
         </details>
         <details class="sidebar-filter">
-          <summary>BRAND</summary>
+          <summary>
+            BRAND
+            <font-awesome-icon class="opened" icon="caret-up" />
+            <font-awesome-icon class="closed" icon="caret-down" />
+          </summary>
           <ul>
           </ul>
         </details>
         <details class="sidebar-filter">
-          <summary>dESIGNER</summary>
+          <summary>
+            dESIGNER
+            <font-awesome-icon class="opened" icon="caret-up" />
+            <font-awesome-icon class="closed" icon="caret-down" />
+          </summary>
           <ul>
           </ul>
         </details>
@@ -89,18 +100,22 @@
           </select></label>
         </div>
 
-        <catalog-list/>
+        <catalog-list />
 
         <div class="catalog-pagination">
-          <ol>
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">20</a></li>
-          </ol>
+          <div class="pages">
+            <font-awesome-icon class="pages-btn" icon="angle-left" />
+            <ol>
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">20</a></li>
+            </ol>
+            <font-awesome-icon class="pages-btn" icon="angle-right" />
+          </div>
           <button class="view-all">View All</button>
         </div>
       </section>
@@ -112,26 +127,29 @@
         <img src="@/assets/images/icon-delivery.png" alt="icon-delivery">
         <figcaption>
           <h3>Free Delivery</h3>
-          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with
+            extensive models.</p>
         </figcaption>
       </figure>
       <figure>
         <img src="@/assets/images/icon-sale.png" alt="icon-sale">
         <figcaption>
           <h3>Sales & discounts</h3>
-          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with
+            extensive models.</p>
         </figcaption>
       </figure>
       <figure>
         <img src="@/assets/images/icon-quantity.png" alt="icon-quantity">
         <figcaption>
           <h3>Quality assurance</h3>
-          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with extensive models.</p>
+          <p>Worldwide delivery on&nbsp;all. Authorit tively morph next-generation innov tion with
+            extensive models.</p>
         </figcaption>
       </figure>
     </section>
 
-    <feedback/>
+    <feedback />
   </main>
 </template>
 
@@ -141,7 +159,6 @@ import CatalogList from '@/blocks/CatalogList.vue';
 import Feedback from '@/blocks/Feedback.vue';
 
 export default {
-  name: 'Catalog',
   components: {
     CatalogList,
     BreadCrumb,

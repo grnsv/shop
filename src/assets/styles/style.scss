@@ -21,7 +21,7 @@ $slide-height: 665px;
   border: 1px solid transparent;
   color: #ffffff;
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.025em;
   cursor: pointer;
   transition: 0.3s;
   
@@ -86,7 +86,6 @@ body {
 }
 
 button.delete-item {
-  font-family: FontAwesome;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -416,18 +415,24 @@ button.delete-item {
         display: none;
       }
 
-      &::after {
-        content: "\f0d7"; 
-        font-family: FontAwesome;
+      .opened {
+        display: none;
+      }
+
+      .closed {
+        display: block;
       }
     }
 
     &[open] summary {
       color: $add-color-pink;
 
-      &::after {
-        content: "\f0d8";
-        font-family: FontAwesome;
+      .opened {
+        display: block;
+      }
+
+      .closed {
+        display: none;
       }
     }
 
@@ -560,7 +565,7 @@ button.delete-item {
   }
 
   .sort-block {
-    margin-top: 25px;
+    margin-top: 30px;
     min-height: 50px;
     background-color: #f3f3f3;
     font-size: 14px;
@@ -619,55 +624,48 @@ button.delete-item {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    ol {
-      list-style: none;
+    .pages {
+      display: flex;
+      align-items: center;
       height: 44px;
       background-color: #ffffff;
       border: 1px solid #ebebeb;
       border-radius: 3px;
       text-align: center;
-      padding: 9px 4px;
+      padding: 4px;
       font-size: 16px;
       font-weight: 300;
       color: #c4c4c4;
 
-      li {
-        display: inline-block;
+      .pages-btn {
+        font-size: 20.2px;
+        font-weight: 400;
+        color: #aaaaaa;
+        margin: 0px 10px;
+      }
 
-        &:first-child::before {
-          content: "\f104 ";
-          font-family: FontAwesome;
-          font-size: 20.2px;
-          font-weight: 400;
-          color: #aaaaaa;
+      ol {
+        list-style: none;
+
+        li {
           display: inline-block;
-          margin: 0px 10px;
-        }
 
-        &:last-child::before {
-          content: "...";
-        }
+          &:last-child::before {
+            content: "...";
+          }
 
-        &:last-child::after {
-          content: " \f105";
-          font-family: FontAwesome;
-          font-size: 20.2px;
-          font-weight: 400;
-          color: #aaaaaa;
-          display: inline-block;
-          margin: 0px 10px;
-        }
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 300;
+            color: #c4c4c4;
+            margin: 0px 8px;
 
-        a {
-          text-decoration: none;
-          font-size: 16px;
-          font-weight: 300;
-          color: #c4c4c4;
-          margin: 0px 6px;
-
-          &.active {
-            color: $add-color-pink;
+            &.active {
+              color: $add-color-pink;
+            }
           }
         }
       }
@@ -727,7 +725,7 @@ button.delete-item {
       text-transform: uppercase;
       color: #222222;
       display: block;
-      margin: 25px 0;
+      margin: 26px 0;
 
       &::-webkit-details-marker {
         display: none;
@@ -753,7 +751,7 @@ button.delete-item {
         font-weight: 400;
         text-transform: uppercase;
         color: #222222;
-        margin: 10px 0;
+        margin-bottom: 14px;
       }
 
       em {
@@ -766,19 +764,15 @@ button.delete-item {
         font-size: 13px;
         font-weight: 400;
         color: #b3b2b2;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
       }
 
       li {
         font-size: 13px;
         font-weight: 400;
         color: #b3b2b2;
-        list-style-type: "\f101";
-        margin: 15px;
-
-        &::marker {
-          font-family: FontAwesome;
-        }
+        list-style-type: none;
+        margin: 16px 0;
       }
 
       input[type="radio"] {
@@ -786,8 +780,7 @@ button.delete-item {
         height: 14px;
         background-color: #ffffff;
         border: 2px solid #555555;
-        vertical-align: middle;
-        margin: 8px 0;
+        margin-right: 14px;
       }
 
       input[type="email"], input[type="password"] {
@@ -808,7 +801,7 @@ button.delete-item {
         font-weight: 700;
         text-transform: uppercase;
         color: #4a4a4a;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 80px;
         margin-right: 30px;
 
@@ -888,7 +881,7 @@ button.delete-item {
 
           dt, dd {
             display: inline-block;
-            margin-bottom: 5px;
+            margin: 0 5px 5px 0;
           }
 
           dt {

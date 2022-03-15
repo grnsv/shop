@@ -23,7 +23,6 @@
 import data from '@/assets/json/megaMenu.json';
 
 export default {
-  name: 'MegaMenu',
   data() {
     return {
       categories: data,

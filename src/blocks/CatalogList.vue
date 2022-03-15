@@ -1,6 +1,6 @@
 <template>
   <ul class="product-list">
-    <catalog-item v-for="good of goods" :good="good" :key="good.id_product"/>
+    <catalog-item v-for="good of goods" :good="good" :key="good.id_product" />
   </ul>
 </template>
 
@@ -9,7 +9,6 @@ import { mapActions, mapGetters } from 'vuex';
 import CatalogItem from '@/components/CatalogItem.vue';
 
 export default {
-  name: 'CatalogList',
   components: { CatalogItem },
   computed: {
     ...mapGetters(['goods', 'cartItems']),

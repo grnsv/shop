@@ -52,7 +52,7 @@ header {
       padding: 9px;
       padding-left: 12px;
 
-      i {
+      svg {
         color: #838383;
       }
     }
@@ -125,7 +125,6 @@ header {
       }
       
       .search-btn {
-        font-family: FontAwesome;
         font-size: 14px;
         font-weight: 400;
         color: #a4a4a4;
@@ -155,6 +154,7 @@ header {
       padding: 5px;
       top: 48px;
       left: -15px;
+      line-height: 1.2;
 
       &:before {
         content: '';
@@ -194,15 +194,13 @@ header {
             }
   
             .stars {
-              font-family: FontAwesome;
               font-size: 12px;
               font-weight: 400;
               text-transform: uppercase;
               color: #e4af48;
-              letter-spacing: -0.2em;
               padding: 4px 0px;
 
-              i {
+              svg {
                 cursor: pointer;
               }
             }
@@ -213,6 +211,7 @@ header {
               text-transform: uppercase;
               color: $main-color-pink;
               padding: 5px 0px;
+              white-space: pre-wrap;
   
               .cart-qty, .cart-price {
                 font-size: 12px;
@@ -284,8 +283,8 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 9px;
-      padding-left: 12px;
+      padding: 12px;
+      padding-left: 16px;
     }
   }
   
