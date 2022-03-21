@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+axios.defaults.baseURL = `${window.location.protocol}//${window.location.hostname}:${process.env.VUE_APP_SERVER_PORT || 5555}`;
+
 export default {
   state: () => ({
     cartItems: [],
@@ -33,7 +35,7 @@ export default {
   actions: {
     async getCartList({ commit }) {
       try {
-        const response = await axios.get('http://localhost:5555/api/cart');
+        const response = await axios.get('/api/cart');
         commit('SET_CART_LIST', response.data);
       } catch (e) {
         console.log(e);
@@ -41,7 +43,7 @@ export default {
     },
     async removeCartItem({ commit }, item) {
       try {
-        await axios.delete(`http://localhost:5555/api/cart/${item.id_product}`);
+        await axios.delete(`/api/cart/${item.id_product}`);
         commit('REMOVE_CART_ITEM', item);
         commit('CALCULATE_CART');
       } catch (e) {
@@ -63,7 +65,7 @@ export default {
               }
             });
         }
-        await axios.post(`http://localhost:5555/api/cart/${item.id_product}`);
+        await axios.post(`/api/cart/${item.id_product}`);
         commit('ADD_CART_ITEM', item);
         commit('CALCULATE_CART');
       } catch (e) {
